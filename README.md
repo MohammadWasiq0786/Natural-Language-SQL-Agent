@@ -1,5 +1,23 @@
 # Build a Natural Language SQL Agent
 
+### Create DB
+https://docs.yugabyte.com/preview/sample-data/chinook/
+
+Introduction to the Chinook database
+The Chinook database models a comprehensive digital media store ecosystem, featuring interconnected tables that track artists, albums, media tracks, invoices, and customer information. Here's what makes it unique:
+
+The media catalog contains authentic data sourced directly from an Apple iTunes library
+Customer and employee records use carefully crafted fictional data, including Google Maps-verified addresses and properly formatted contact details (phone numbers, fax, email addresses)
+The sales data spans a 4-year period and was generated programmatically with randomized but realistic values
+Key characteristics of the database:
+
+Comprehensive structure with 11 distinct tables
+Robust data integrity through indexes and primary/foreign key relationships
+Rich dataset containing more than 15,000 records
+Below you'll find the entity relationship diagram (ERD) that illustrates how the different components of the Chinook database connect and interact with each other.
+
+![er](er_dia.png)
+
 ### Create venv
 ```bash
 pip install virtualenv 
@@ -19,26 +37,6 @@ mysql-connector-python==8.4.0
 ````
 
 ### Connect with MySQL
-
-
-### Create DB
-https://docs.yugabyte.com/preview/sample-data/chinook/
-
-Introduction to the Chinook database
-The Chinook database models a comprehensive digital media store ecosystem, featuring interconnected tables that track artists, albums, media tracks, invoices, and customer information. Here's what makes it unique:
-
-The media catalog contains authentic data sourced directly from an Apple iTunes library
-Customer and employee records use carefully crafted fictional data, including Google Maps-verified addresses and properly formatted contact details (phone numbers, fax, email addresses)
-The sales data spans a 4-year period and was generated programmatically with randomized but realistic values
-Key characteristics of the database:
-
-Comprehensive structure with 11 distinct tables
-Robust data integrity through indexes and primary/foreign key relationships
-Rich dataset containing more than 15,000 records
-Below you'll find the entity relationship diagram (ERD) that illustrates how the different components of the Chinook database connect and interact with each other.
-
-![er](er_dia.png)
-
 
 ```bash
 create
